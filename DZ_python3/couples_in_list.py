@@ -1,14 +1,15 @@
-from random import sample
-from secrets import choice
+from random import sample,choice
+
 num1 = int(input("Введите длинну списка:"))
-my_list1 = sample(range(1, num1*2), num1)
-""" for i in range(num1):
-    i = choice(range(1,num1*2),num1)
-    my_list1.append(i) """
+#my_list1 = sample(range(1, num1*2), num1)
+for i in range(num1):
+    my_list1 = []
+    i = choice(range(num1*2))
+    my_list1.append(i)
 print(my_list1)
 
 
-def WorkCouples(my_list1):
+""" def WorkCouples(my_list1):
 
     my_list2 = []
     for k in range(len(my_list1)//2):  # или num1 // 2
@@ -23,4 +24,4 @@ def WorkCouples(my_list1):
     return my_list2
 
 
-print(WorkCouples(my_list1))
+print(WorkCouples(my_list1)) """
